@@ -1,0 +1,34 @@
+body, html {
+    background-color: #161715;
+}
+
+#foot {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+.icon {
+    font-size: 50px;
+    padding: 4px;
+}
+#linked {
+    color: #0077B5;
+}
+
+#git {
+    color: #C7D2CF
+}
+
+#ig {
+    color: #E1306C;
+}
+
+#twitter {
+    color: #1DA1F2;
+}
+
+#mail {
+    color: #DB4437;
+}
