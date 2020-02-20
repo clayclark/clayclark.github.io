@@ -1,91 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146464563-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-  gtag('config', 'UA-146464563-2');
-</script>
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <script src="https://kit.fontawesome.com/efe46deff3.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
-  <title>Clay Clark</title>
-</head>
-
-<body>
-    <div class="d-flex align-items-start flex-column bd-highlight mb-3" style="height: 200px;">
-      <a href="Clayton_Clark_Resume.pdf" style="text-decoration: none;">
-        <div class="mb-auto p-2 bd-highlight"><h4>Resum&eacute;</h4></div>
+    <title>Clayton Clark&trade;</title>
+  </head>
+  <body  onload=display_ct();>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9">
+          <p id="bio">
+            From Seal Beach, California (U.S.A.), Clayton Clark is a computer
+            scientist. He is currently pursing a degree in Computer Science from
+            the University of California, Irvine. He wishes to combine the
+            fields of sports, analytics, and software. These wishes, merged with
+            contemporary culture, make up Clark’s dreams today.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p id="time">Current Local Time <span id="ct"></span></p>
+          <script type="text/javascript"> 
+            function display_c(){
+            var refresh=1000; // Refresh rate in milli seconds
+            mytime=setTimeout('display_ct()',refresh)
+            }
+            function display_ct() {
+              var x = new Date()
+              var x1=x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+              document.getElementById('ct').innerHTML = x1;
+              display_c();
+            }
+            </script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" >
+          <p id="spinner">Clayton Clark™</p>
+        </div>
+      </div>
+      <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseNFC, #collapseA, #collapseC, #collapseU,#collapseG,#collapse1,#collapseB" role="button">
+        Open/Close All
       </a>
+      <div class="row colLink">
+        <a href="https://www.linkedin.com/in/clay-clark24/" target="_blank" button type="button" class="btn btn-primary btn-sm">go to LinkedIn</a>
       </div>
-  <div class="d-flex justify-content-center">
-    <h1 id="title">Clay Clark</h1>
-  </div>
-
-
-  
-
-
-    <footer>
-      <div id="foot" class="container-fluid">
-        <a href="mailto:caclark@uci.edi" target="_blank">
-          <i id="mail" class="fas fa-envelope icon"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/clay-clark24/" target="_blank">
-          <i id="linked" class="fab fa-linkedin icon"></i>
-        </a>
-        <a href="https://github.com/clayclark" target="_blank">
-          <i id="git" class="fab fa-github icon"></i>
-        </a>
-        <a href="http://">
-          <i id="ig" class="fab fa-instagram icon"></i>
-        </a>
-        <a href="http://">
-          <i id="twitter" class="fab fa-twitter-square icon"></i>
-        </a>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col  border-dark">
+          <!-- <div class="row"> -->
+            <h1>Projects</h1>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <p class="collap " data-toggle="collapse" href="#collapseNFC" ><u>NFC SMART LOCK</u> <span class="badge badge-danger">August 2018 - September 2018</span></p> 
+            <div class="collapse show" id="collapseNFC" >
+              <div class="card card-body" >
+                <p>• Led 3-person team by coding the program’s top project, a Raspberry Pi with Python to open a lock through Near Field Communication
+                  • Used 3D printing, Corel-Draw, SolidWorks, and laser cutting to design a housing for the lock</p>
+              </div>
+            </div>
+            <hr>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <a href="HTTP://ALPHABET-1384.APPSPOT.COM/" target="_blank"><u>LIT Social Media Search Engine</u> <span class="badge badge-danger">July 2016</span></a>
+          <!-- </div> -->
+        </div>
+        <div class="col border-left border-right border-dark" >
+          <!-- <div class="row"> -->
+          <h1>Experience</h1>
+        <!-- </div> -->
+          <!-- <div class="row"> -->
+            <p class="collap" data-toggle="collapse" href="#collapseA"><u>Arista Networks</u> <span class="badge badge-danger">June 2019 - September 2019</span></p> 
+            <div class="collapse show" id="collapseA" >
+              <div class="card card-body" >
+                <p>• Focused primarily on software, written in Go, that runs general network/switch management, provisioning, and orchestration on data centers
+                  • Helped network operators increase visibility into the state of their network by providing real time, event-driven data feeds, and alerting of all first
+                  and third party devices, including VMware Vswitches and Kubernetes containers</p>
+              </div>
+            </div>
+            <hr>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <p class="collap" data-toggle="collapse" href="#collapseC"><u>Cornell University</u> <span class="badge badge-danger">April 2018 - July 2019</span></p> 
+            <div class="collapse show" id="collapseC" >
+              <div class="card card-body" >
+                <p>• Used data and key performance indicators to build a dashboard that uses visuals to improve understanding of complex business situations
+                  • Created and validated regression models that can be used to determine the effect of attributes on a decision and predict likely outcomes</p>
+              </div>
+            </div>
+            <hr>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <p class="collap" data-toggle="collapse" href="#collapseU"><u>UC Irvine School of ICS</u> <span class="badge badge-danger">July 2016 - June 2019</span></p> 
+            <div class="collapse show" id="collapseU" >
+              <div class="card card-body" >
+                <p>
+                  • Mentor 70+ incoming freshmen in college level engineering curriculum for upcoming classes
+                  • Guides students in creating 40+ Internet of Things projects using the Raspberry Pi and Python</p>
+              </div>
+            </div>
+            <hr>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <p class="collap" data-toggle="collapse" href="#collapseG"><u>Google</u> <span class="badge badge-danger">July 2016</span></p> 
+            <div class="collapse show" id="collapseG" >
+              <div class="card card-body" >
+                <p>• 1 of 30 high school seniors selected nationally to attend Google’s 3-week intensive Computer Science Summer Institute at the Google Seattle Campus to learn coding
+                  • Learned JavaScript and Python, while creating web apps with Google App Engine, API’s, HTML, and CSS</p>
+              </div>
+            </div>
+            <hr>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+          <h1>Organizations</h1>
+        <!-- </div> -->
+          <!-- <div class="row"> -->
+            <p class="collap" data-toggle="collapse" href="#collapse1"><u>100 Black Men of Orange County</u> <span class="badge badge-danger">October 2017 - Present</span></p> 
+            <div class="collapse show" id="collapse1" >
+              <div class="card card-body" >
+                <p>• Instructs 30+ young men grades 6-12 in Raspberry Pi and Python curriculum
+                  • Implementing curriculum which teaches students how to fabricate quadcopters from scratch</p>
+              </div>
+            </div>
+            <hr>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <p class="collap" data-toggle="collapse" href="#collapseB"><u>Base 11</u> <span class="badge badge-danger">October 2017 - Present</span></p> 
+            <div class="collapse show" id="collapseB" >
+              <div class="card card-body" >
+                <p>• Trains over 30 college students skills such coding Raspberry Pi’s and using CAD software for 3D printing to develop IoT quadcopters.</p>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col  border-dark" >
+          <!-- <div class="row"> -->
+            <h1>Skills</h1>
+          <!-- </div> -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">Kubernetes</li>
+            <li class="list-group-item">Docker</li>
+            <li class="list-group-item">AWS</li>
+            <li class="list-group-item">R</li>
+            <li class="list-group-item">C++</li>
+            <li class="list-group-item">Go</li>
+            <li class="list-group-item">Linux</li>
+            <li class="list-group-item">Git</li>
+            <li class="list-group-item">Gerrit</li>
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">Spark AR</li>
+            <li class="list-group-item">Swift</li>
+            <li class="list-group-item">Django</li>
+            <li class="list-group-item">Flask</li>
+          </ul>
+        </div>
       </div>
-    </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
