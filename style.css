@@ -56,11 +56,22 @@ canvas {
 .count-particles {
   border-radius: 0 0 3px 3px;
 }
-
-.cent {
-    color: #c7d2cf;
-    font-size: 3em;
+  
+p {
     -webkit-user-select: none; /* Chrome/Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+ */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+.card {
+    color: #c7d2cf;
+    font-size: 5em;
+    position: absolute;
+    background: #161715;
+    top: 50%;
+    left: 50%;
+    margin: -110px 0 0 -220px;
+    padding: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 100;
 }
